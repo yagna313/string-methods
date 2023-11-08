@@ -1,1 +1,111 @@
 # string-methods
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string methods</title>
+</head>
+<body>
+    <script>
+        //Indian Number
+       /* function indiannumber(numbers){
+            if(numbers.startsWith(6||7||8||9) && numbers.length==10 ){
+                const formattedNumber = `${numbers[0]}${numbers[1]}${numbers[2]}${numbers[3]}${numbers[4]}${numbers[5]}${numbers[6]}${numbers[7]}${numbers[8]}${numbers[9]}`;
+             return formattedNumber;
+            }else{
+            return "invalid"
+            }
+        }
+        const numbers = prompt("Enter phone Number:");
+        console.log(indiannumber(numbers)); */
+
+        //remove spaces
+        /*function spacingremove(str){
+          let  withoutspace='';
+            for(i=0;i<str.length;i++){
+                
+                if(str[i] !== ' ')
+                {
+                    withoutspace+=str[i]
+                }
+            }
+            return withoutspace;
+        }
+        console.log(spacingremove('prathyus ha'));
+        */
+        //print characers at odd postion
+       /* function odd(str){
+            let oddstr= '';
+            for(i=0;i<str.length;i++){
+                if(i%2!==0){
+                oddstr += str[i];
+                }
+                
+            }
+            console.log(oddstr);
+        }
+        const string = odd("prathyusha")*/
+        //split
+        /*function split(str,x){
+            let string = '';
+            let index = 0;
+            result = [];
+            for(i=0;i<str.length;i++){
+                if(str[i]==x){
+                    result[index] = string;
+                    string = '';
+                    index++;
+                }
+                else{
+                string += str[i]
+                }
+            }
+            result[index] = string;
+            return result
+        }
+        console.log(split("prath,yag",","));*/
+        /*let a = "keer,avi"
+        console.log(a.split(","));*/
+        //match
+        /*function count(str,char){
+           let  x=0
+            for(i=0;i<str.length;i++){
+                if(str[i]==char)
+                {
+                    ++x
+                }
+            }
+            return x
+        }
+       console.log(count("prath","a"));*/
+       //mail validate
+       /*function validate(str){
+        for(i=0;i<str.length;i++){
+            let str2 = "@gmail.com"
+            if(str.endsWith(str2))
+            {
+                return "valid"
+            }
+            else{
+                return "invalid"
+            }
+        }
+        return str
+       }
+       console.log(validate("keer@gmail.com"));*/
+       //
+      // let x = "1@345@5678@12234"
+       function validate(num){
+        let str = '';
+        for(i=0;i<num.length;i++){
+            if(num[i]!=="@"){
+                str += num[i];
+            }
+        }
+        console.log(str);
+       }
+    let x = validate("1@234@5678@23456");
+</script>
+</body>
+</html>
